@@ -1,0 +1,64 @@
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 60px;
+}
+
+    .thumbnail .caption-full {
+        padding: 9px;
+    }
+
+.delete-form {
+    display: inline;
+}
+
+.searchBar {
+    margin-top: 8px;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-color: #e0d5d5;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #000;
+}
+
+    .footer .container {
+        margin-top: 15px;
+    }
+
+    .footer a {
+        color: #fff;
+    }
+
+        .footer a:hover {
+            color: red;
+        }
+
+.jumbotron {
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/37d9d9ba-14ab-4c99-996f-31720aaaafcc/d60ba9v-e7ade25a-2a61-4f73-b805-fbb9c0cc9b33.jpg/v1/fill/w_1024,h_576,q_75,strp/youtube_onechannel_banner___dark_knight_gaming_by_6bromedia_d60ba9v-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzM3ZDlkOWJhLTE0YWItNGM5OS05OTZmLTMxNzIwYWFhYWZjY1wvZDYwYmE5di1lN2FkZTI1YS0yYTYxLTRmNzMtYjgwNS1mYmI5YzBjYzliMzMuanBnIiwiaGVpZ2h0IjoiPD01NzYiLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC8zN2Q5ZDliYS0xNGFiLTRjOTktOTk2Zi0zMTcyMGFhYWFmY2NcLzZicm9tZWRpYS00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.lOUCHvv-7Ejz9HheOAs8bliLbrAQ97wTZbZCgEkTqg4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}

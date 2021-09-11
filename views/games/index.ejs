@@ -1,0 +1,39 @@
+<% include ../partials/header %>
+
+<% if(currentUser && currentUser.isAdmin){ %>
+    <h1>Logged in as Admin</h1>
+<% } %>
+
+<div class="container">
+    <header class="jumbotron">
+        <div class="container">
+            <h1>Gamers Blogs!</h1>
+            <p>Get Information On Latest games In The Market.</p>
+            <p>
+             <a  class="btn btn-primary btn-lg" href="/games/new">Add a new entry</a>   
+            </p>
+        </div>
+    </header>
+    
+        <div class="row" style="display:flex; flex-wrap: wrap">
+            <% games.forEach(function(game){%>
+                <div class="col-lg-9 col-md-9 col-sm-9 col-centered">
+                    
+                    <div class="thumbnail">
+                         <img src="<%= game.image %>" width="300px">
+                         <div class="caption">
+                            <h4><%= game.name %></h4>
+                         </div>
+                         <p>
+                             <a href="/games/<%= game._id%>" class="btn btn-primary">More Info</a></a>
+                         </p>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+</div>
+
+<% include ../partials/footer %>
+
+
+
