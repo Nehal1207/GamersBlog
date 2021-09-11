@@ -7,8 +7,9 @@ const methodOverride = require("method-override");
 const flash = require("connect-flash");
 const cookieParser = require("cookie-parser");
 
-const User = require("./models/user");
+const PORT= process.env.PORT || 3000;
 
+const User = require("./models/user");
 const app = express();
 
 require('dotenv').config();
@@ -54,6 +55,6 @@ app.use(indexRoutes);
 app.use("/games", gameRoutes);
 app.use("/games/:id/comments", commentRoutes);
 
-app.listen(process.env.PORT, function () {
-    console.log(`Gamers Blogs App Server has Started on ${process.env.PORT}!!!`);
+app.listen(PORT, function () {
+    console.log(`Gamers Blogs App Server has Started on ${PORT}!!!`);
 });
